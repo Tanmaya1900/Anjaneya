@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANJANEYA Infotech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #0d47a1;
+      color: #fff;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffcc80, #ffab91);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #fff;
+      color: #0d47a1;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services, .portfolio, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #0d47a1;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .logo {
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="ANJANEYA Infotech Logo" class="logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Your Vision with Technology</h1>
+    <p>ANJANEYA Infotech delivers cutting-edge ITES solutions tailored to your needs</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>ANJANEYA Infotech is a trusted name in IT Enabled Services (ITES), offering innovative, scalable, and secure digital solutions. We specialize in workforce management systems, enterprise resource planning, and intelligent automation tools to drive business growth.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our ITES Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Device-less Attendance System</h3>
+        <p>Cloud-based attendance tracking using facial recognition and mobile GPS.</p>
+      </div>
+      <div class="card">
+        <h3>Billing & ERP Solutions</h3>
+        <p>Integrated software for billing, inventory, HR, and financial management.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Infrastructure Management</h3>
+        <p>Scalable hosting, deployment, and monitoring for your applications.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Software Development</h3>
+        <p>Bespoke IT solutions tailored to your unique business requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio">
+      <div class="card">Attendance System for Manufacturing Firm</div>
+      <div class="card">ERP for Retail Chain</div>
+      <div class="card">Cloud Dashboard for Logistics</div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonials">
+      <div class="card">
+        <p>"ANJANEYA Infotech's attendance system streamlined our operations completely."</p>
+        <strong>- HR Manager</strong>
+      </div>
+      <div class="card">
+        <p>"Their ERP solution saved us hours every week in accounting and reporting."</p>
+        <strong>- Finance Lead</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@ANJANEYAit.com | Phone: +91-12345-67890</p>
+    <form action="https://formsubmit.co/info@ANJANEYAit.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ANJANEYA Infotech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
